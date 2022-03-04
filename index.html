@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+
+    <body>
+        <section id="Login_Page"> 
+          <!can use prevent action modifier to stop reloading full page>
+          <form v-on:submit="submitForm">       
+            <h2>Login for the magic!!</h2>
+            <label for="email id"> Email ID </label><br>
+            <input type="text" v-on:input="setName" id="email_id" name="Email ID"><br><br>
+            <label for="password"> Password </label><br>
+            <input type="text" id="password" name="Email ID"><br><br>
+            <button>Login</button>
+          </form>
+    </section>
+
+    </body>
+</html>
